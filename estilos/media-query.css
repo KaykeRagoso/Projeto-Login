@@ -1,58 +1,14 @@
 @charset "UTF-8";
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    body {
-        background: #f0f0f0;
-    }
-    .example {
-        background: red;
-    }
-    section#login {
-        width: 90vw;
-        height: auto;
-    }
-    section#login > div#imagem,
-    section#login > div#formulario {
-        width: 100%;
-        float: none;
-    }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
         font-size: 1.5em;
     }
-    .example {
-        background: green;
-    }
     section#login {
         width: 90vw;
-    }
-    section#login > div#imagem {
-        float: left;
-        width: 30%;
-        height: 100%;
-    }
-    section#login > div#formulario {
-        float: right;
-        width: 70%;
-    }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    body {
-        background-image: linear-gradient(to top, #49a09d, #5f2c82);
-        font-size: 1.5em;
-    }
-    .example {
-        background: blue;
-    }
-    section#login {
-        width: 90vw;
+        height: 40vh;
     }
     section#login > div#imagem {
         float: left;
@@ -70,11 +26,9 @@
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
-    .example {
-        background: orange;
-    }
     section#login {
-        width: 65vw;
+        width: 65vw; /* 950px ≈ 65vw numa tela de 1440px */
+        height: 50vh;
     }
     section#login > div#imagem {
         float: left;
@@ -91,14 +45,11 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
-        font-size: 1.575em;
-    }
-    .example {
-        background: yellow;
+        font-size: 2em;
     }
     section#login {
         width: 90vw;
-        height: 60vh;
+        height: 40vh;
     }
     section#login > div#imagem {
         float: left;
@@ -116,12 +67,9 @@
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
-    .example {
-        background: pink;
-    }
     section#login {
-        width: 76vw;
-        height: 65vh;
+        width: 76vw;   /* 1100px ≈ 76vw numa tela de 1440px */
+        height: 65vh;  /* 600px ≈ 65vh numa tela de 920px de altura */
     }
     section#login > div#imagem {
         float: left;
@@ -141,7 +89,7 @@
     }
     section#login {
         width: 80vw;
-        height: 80vh;
+        height: 60vh;
     }
     section#login > div#imagem {
         float: left;
@@ -152,10 +100,10 @@
         float: right;
         width: 65%;
     }
-    div#formulario > h1 {
+    div#formulario > h1{
         font-size: 2em;
     }
-    div#formulario > p {
+    div#formulario > p{
         font-size: 1.2em;
     }
 }
@@ -170,7 +118,7 @@
 
     section#login {
         width: 90vw;
-        height: 90vh;
+        height: 70vh;
     }
 
     section#login > div#imagem {
@@ -181,6 +129,38 @@
 
     section#login > div#formulario {
         float: right;
+        width: 65%;
+        height: 100%;
+    }
+
+    div#formulario > h1 {
+        font-size: 1.5em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+    }
+}
+
+/* Suporte específica para 912x1368(Surface Pro 7*/
+@media screen and (width: 912px) and (height: 1368px) {
+    body {
+        font-size: 2em;
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        overflow: hidden;
+    }
+
+    section#login {
+        width: 90vw;
+        height: 35vh;
+    }
+
+    section#login > div#imagem {
+        width: 35%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
         width: 65%;
         height: 100%;
     }
