@@ -98,4 +98,44 @@
         float: right;
         width: 65%;
     }
+    div#formulario > h1{
+        font-size: 2em;
+    }
+    div#formulario > p{
+        font-size: 1.2em;
+    }
+}
+
+/* Suporte específico para 1024x600 */
+@media screen and (width: 1024px) and (height: 600px) {
+    body {
+        background-image: linear-gradient(to top, #49a09d, #5f2c82);
+        font-size: 1.2em;
+        overflow: hidden;
+    }
+
+    section#login {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    section#login > div#imagem {
+        float: left;
+        width: 35%;
+        height: 100%;
+    }
+
+    section#login > div#formulario {
+        float: right;
+        width: 65%;
+        height: 100%;
+    }
+
+    div#formulario > h1 {
+        font-size: 1.5em;
+    }
+
+    div#formulario > p {
+        font-size: 1em;
+    }
 }
