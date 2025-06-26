@@ -1,9 +1,32 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 600px) and (max-width: 767px) {
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+        background: #f0f0f0;
+    }
+    .example {
+        background: red;
+    }
+    section#login {
+        width: 90vw;
+        height: auto;
+    }
+    section#login > div#imagem,
+    section#login > div#formulario {
+        width: 100%;
+        float: none;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
         font-size: 1.5em;
+    }
+    .example {
+        background: green;
     }
     section#login {
         width: 90vw;
@@ -18,11 +41,15 @@
         width: 70%;
     }
 }
-/* Tablet */
-@media screen and (min-width: 768px) and (max-width: 991px) {
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
         font-size: 1.5em;
+    }
+    .example {
+        background: blue;
     }
     section#login {
         width: 90vw;
@@ -43,8 +70,11 @@
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
+    .example {
+        background: orange;
+    }
     section#login {
-        width: 65vw; /* 950px ≈ 65vw numa tela de 1440px */
+        width: 65vw;
     }
     section#login > div#imagem {
         float: left;
@@ -62,6 +92,9 @@
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
         font-size: 1.575em;
+    }
+    .example {
+        background: yellow;
     }
     section#login {
         width: 90vw;
@@ -83,9 +116,12 @@
     body {
         background-image: linear-gradient(to top, #49a09d, #5f2c82);
     }
+    .example {
+        background: pink;
+    }
     section#login {
-        width: 76vw;   /* 1100px ≈ 76vw numa tela de 1440px */
-        height: 65vh;  /* 600px ≈ 65vh numa tela de 920px de altura */
+        width: 76vw;
+        height: 65vh;
     }
     section#login > div#imagem {
         float: left;
@@ -116,10 +152,10 @@
         float: right;
         width: 65%;
     }
-    div#formulario > h1{
+    div#formulario > h1 {
         font-size: 2em;
     }
-    div#formulario > p{
+    div#formulario > p {
         font-size: 1.2em;
     }
 }
